@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "Dataset of electrophysiological signals (EEG, ECG, EMG) during Music therapy with adult burn patients in the Intensive Care Unit.",
+  "description": "This dataset comprises electrophysiological signals (EEG, ECG, EMG) recorded from 9 adult burn patients in an intensive care unit during Music-Assisted Relaxation therapy sessions. As part of a randomized clinical trial (NCT04571255), recordings were obtained during baseline, intervention, and post-intervention phases across two separate sessions per patient. The study investigates the physiological effects of music therapy on pain perception and anxiety-depression levels in critically ill burn patients, with concurrent behavioral assessments using standardized clinical scales.",
+  "methods_description": "Electrophysiological recordings were conducted using Micromed LTM64 equipment (sampling frequency ≥256 Hz) with 8-channel EEG (FP1, FP2, T3, T4, C3, C4, O1, O2; reference Cz, ground at mastoids), bipolar ECG (lead II), and bipolar EMG (corrugator supercilii muscle). Each session included three phases: pre-intervention baseline (eyes closed or fixed), Music-Assisted Relaxation intervention, and post-intervention recovery. Pain was assessed using Visual Analog Scale (0-10), and anxiety-depression using the Colombian version of the Hospital Anxiety and Depression Scale (HADS).",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -15,53 +17,11 @@
     "Viviana Gómez-Ortega": {},
     "Mark Ettenberger": {}
   },
-  "related_identifiers": [
-    {
-      "identifier": "10.18112/openneuro.ds004840.v1.0.1",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
-    },
-    {
-      "identifier": "https://github.com/nemarDatasets/on004840",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004840",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "10.18112/openneuro.ds004840",
-      "identifier_type": "DOI",
-      "relation_type": "IsVersionOf"
-    }
-  ],
-  "resource_type_general": "Dataset",
-  "modalities": [
-    "eeg"
-  ],
-  "resource_type_specific": "EEG Dataset",
-  "sizes": [
-    "0.0 KB (1 files)"
-  ],
-  "formats": [
-    ".csv",
-    ".edf",
-    ".json",
-    ".mat",
-    ".md",
-    ".py",
-    ".pyc",
-    ".tsv"
-  ],
-  "description": "This dataset comprises electrophysiological signals (EEG, ECG, EMG) recorded from nine adult burn patients hospitalized in an intensive care unit during Music-Assisted Relaxation therapy sessions. These nine participants represent 11% of a larger randomized clinical trial involving 82 adult burn patients. Data were collected as part of this RCT examining the effects of music therapy on pain, anxiety, and depression in burn patients. Each participant underwent two recording sessions with pre-intervention baseline, intervention, and post-intervention phases, accompanied by clinical assessments using the Visual Analog Scale and Hospital Anxiety and Depression Scale.",
-  "methods_description": "Electrophysiological recordings were conducted using Micromed LTM64 equipment (sampling frequency ≥256 Hz) during two Music-Assisted Relaxation sessions per participant. EEG was recorded from eight electrodes (FP1, FP2, T3, T4, C3, C4, O1, O2) using the 10-20 system with Cz reference and mastoid ground. ECG was acquired via bipolar lead II configuration, and EMG was recorded from the left corrugator supercilii muscle using bipolar electrodes spaced 20 mm apart. Each session included three phases: pre-intervention baseline (eyes closed or fixed), intervention, and post-intervention. Clinical measures included Visual Analog Scale for pain assessment and Hospital Anxiety and Depression Scale for anxiety and depression evaluation.",
   "keywords": [
     {
       "term": "EEG",
       "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004152"
     },
     {
       "term": "Electrocardiography",
@@ -89,25 +49,66 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D007362"
     },
     {
-      "term": "Randomized Controlled Trial",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D016032"
-    },
-    {
-      "term": "pain management",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D059408"
-    },
-    {
-      "term": "anxiety",
+      "term": "Anxiety",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D001007"
     },
     {
-      "term": "depression",
+      "term": "Depression",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D003863"
+    },
+    {
+      "term": "Pain Measurement",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D010147"
+    },
+    {
+      "term": "Randomized Controlled Trial",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D016032"
     }
   ],
-  "source_hash": "4a53860eacfedbded38b176031a470922d83cfd32ac57a84ac03c63f66c45835"
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/nemarDatasets/on004840",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004840",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004840",
+      "identifier_type": "DOI",
+      "relation_type": "IsVersionOf"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004840.v1.0.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    }
+  ],
+  "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "sizes": [
+    "1.9 GB (74 files)"
+  ],
+  "formats": [
+    ".csv",
+    ".edf",
+    ".json",
+    ".mat",
+    ".md",
+    ".py",
+    ".pyc",
+    ".tsv",
+    ".yml"
+  ],
+  "source_hash": "064af72a99f055ee26be69ec98307c38115f026ac050ec9dfc4324e16661e4eb"
 }
