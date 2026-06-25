@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on004840-blue)](https://doi.org/10.82901/nemar.on004840)
+
 # Dataset of  electrophysiological signals (EEG, ECG, EMG) during Music therapy with adult burn patients in the Intensive Care Unit - README
 
 ## Table of Contents
