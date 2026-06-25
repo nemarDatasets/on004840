@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "dataset_id": "on004840",
-  "source": "openneuro",
-  "source_id": "ds004840",
+  "pipeline_stage": "enriched",
   "title": "Dataset of electrophysiological signals (EEG, ECG, EMG) during Music therapy with adult burn patients in the Intensive Care Unit.",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Jose Cordoba-Silva": {},
     "Rafael Maya": {},
@@ -15,21 +15,99 @@
     "Viviana Gómez-Ortega": {},
     "Mark Ettenberger": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds004840.v1.0.1",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on004840",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004840",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004840",
+      "identifier_type": "DOI",
+      "relation_type": "IsVersionOf"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.8.0",
-  "recording_modality": [
+  "resource_type_general": "Dataset",
+  "modalities": [
     "eeg"
   ],
-  "datatypes": [
-    "eeg"
-  ]
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".csv",
+    ".edf",
+    ".json",
+    ".mat",
+    ".md",
+    ".py",
+    ".pyc",
+    ".tsv"
+  ],
+  "description": "This dataset comprises electrophysiological signals (EEG, ECG, EMG) recorded from nine adult burn patients hospitalized in an intensive care unit during Music-Assisted Relaxation therapy sessions. These nine participants represent 11% of a larger randomized clinical trial involving 82 adult burn patients. Data were collected as part of this RCT examining the effects of music therapy on pain, anxiety, and depression in burn patients. Each participant underwent two recording sessions with pre-intervention baseline, intervention, and post-intervention phases, accompanied by clinical assessments using the Visual Analog Scale and Hospital Anxiety and Depression Scale.",
+  "methods_description": "Electrophysiological recordings were conducted using Micromed LTM64 equipment (sampling frequency ≥256 Hz) during two Music-Assisted Relaxation sessions per participant. EEG was recorded from eight electrodes (FP1, FP2, T3, T4, C3, C4, O1, O2) using the 10-20 system with Cz reference and mastoid ground. ECG was acquired via bipolar lead II configuration, and EMG was recorded from the left corrugator supercilii muscle using bipolar electrodes spaced 20 mm apart. Each session included three phases: pre-intervention baseline (eyes closed or fixed), intervention, and post-intervention. Clinical measures included Visual Analog Scale for pain assessment and Hospital Anxiety and Depression Scale for anxiety and depression evaluation.",
+  "keywords": [
+    {
+      "term": "EEG",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "Electrocardiography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004562"
+    },
+    {
+      "term": "Electromyography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004576"
+    },
+    {
+      "term": "Music Therapy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D009147"
+    },
+    {
+      "term": "Burns",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D002056"
+    },
+    {
+      "term": "Intensive Care Units",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D007362"
+    },
+    {
+      "term": "Randomized Controlled Trial",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D016032"
+    },
+    {
+      "term": "pain management",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D059408"
+    },
+    {
+      "term": "anxiety",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D001007"
+    },
+    {
+      "term": "depression",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D003863"
+    }
+  ],
+  "source_hash": "4a53860eacfedbded38b176031a470922d83cfd32ac57a84ac03c63f66c45835"
 }
