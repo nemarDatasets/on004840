@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Dataset of electrophysiological signals (EEG, ECG, EMG) during Music therapy with adult burn patients in the Intensive Care Unit.",
-  "description": "This dataset comprises electrophysiological signals (EEG, ECG, EMG) recorded from 9 adult burn patients in an intensive care unit during Music-Assisted Relaxation therapy sessions. As part of a randomized clinical trial (NCT04571255), recordings were obtained during baseline, intervention, and post-intervention phases across two separate sessions per patient. The study investigates the physiological effects of music therapy on pain perception and anxiety-depression levels in critically ill burn patients, with concurrent behavioral assessments using standardized clinical scales.",
-  "methods_description": "Electrophysiological recordings were conducted using Micromed LTM64 equipment (sampling frequency ≥256 Hz) with 8-channel EEG (FP1, FP2, T3, T4, C3, C4, O1, O2; reference Cz, ground at mastoids), bipolar ECG (lead II), and bipolar EMG (corrugator supercilii muscle). Each session included three phases: pre-intervention baseline (eyes closed or fixed), Music-Assisted Relaxation intervention, and post-intervention recovery. Pain was assessed using Visual Analog Scale (0-10), and anxiety-depression using the Colombian version of the Hospital Anxiety and Depression Scale (HADS).",
+  "description": "This dataset contains electrophysiological recordings (EEG, ECG, and facial EMG) from nine adult burn patients in an intensive care unit who received music therapy. It is part of a single-site randomized clinical trial. Each patient was recorded during two Music-Assisted Relaxation sessions, each with pre-intervention, intervention, and post-intervention phases. Pain (VAS) and anxiety-depression (HADS) measures were also collected to relate to the physiological signals.",
+  "methods_description": "Recordings used a Micromed LTM64 clinical system at a sampling rate of at least 256 Hz. EEG was recorded from eight 10-20 sites (FP1, FP2, T3, T4, C3, C4, O1, O2) with a Cz reference. ECG was recorded with a bipolar lead II montage. Corrugator supercilii EMG was recorded with bipolar electrodes on the left eyebrow. Each patient completed two Music-Assisted Relaxation sessions on different days, and pain (VAS) and anxiety/depression (HADS) were assessed.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -19,19 +19,13 @@
   },
   "keywords": [
     {
-      "term": "EEG",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004152"
+      "term": "EEG"
     },
     {
-      "term": "Electrocardiography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004562"
+      "term": "ECG"
     },
     {
-      "term": "Electromyography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004576"
+      "term": "EMG"
     },
     {
       "term": "Music Therapy",
@@ -49,34 +43,12 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D007362"
     },
     {
-      "term": "Anxiety",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D001007"
-    },
-    {
-      "term": "Depression",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D003863"
-    },
-    {
-      "term": "Pain Measurement",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D010147"
-    },
-    {
-      "term": "Randomized Controlled Trial",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D016032"
+      "term": "music-assisted relaxation"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on004840",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004840",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     },
@@ -89,6 +61,11 @@
       "identifier": "10.18112/openneuro.ds004840.v1.0.1",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on004840",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_general": "Dataset",
@@ -97,7 +74,7 @@
     "eeg"
   ],
   "sizes": [
-    "1.9 GB (74 files)"
+    "1.75 GB (74 files)"
   ],
   "formats": [
     ".csv",
